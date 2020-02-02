@@ -30,7 +30,12 @@ $(document).ready(function() {
   $('.add-url').on('keyup', 'input', function(e) {
     if (e.keyCode == 13) add();
   });
-
+  
+  $('footer a').on('click', function(e) {
+    let link = $(this).attr('link');
+    chrome.tabs.create({url: link});
+  });
+  
   chrome.storage.sync.get('block-urls', function(o) {
     for (let url in o['block-urls']) {
       $('.block-urls').append(`<div><input type="text" value="${url}" readonly><div class="bt tg"><i class="fas fa-toggle-${o['block-urls'][url] ? 'on' : 'off'}"></i></div><div class="bt rm"><i class="fas fa-trash-alt"></i></div></div>`).show();
