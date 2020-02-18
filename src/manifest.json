@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Request Blocking",
   "version": "1.1",
-  "description": "Block requests form client to server",
+  "description": "Block requests from client to server",
   "permissions": ["storage", "<all_urls>", "webRequest", "webRequestBlocking"],
   "background": {
     "scripts": ["js/background.js"]
