@@ -2,6 +2,16 @@ let fun = function() {
   return {cancel: true};
 };
 
+!function() {
+  chrome.storage.sync.get('block-urls', function(o) {
+    urls = [];
+    for (let url in o['block-urls']) {
+      if (o['block-urls'][url]) urls.push(url);
+    }
+    if (urls.length) chrome.webRequest.onBeforeRequest.addListener(fun, {urls: urls}, ['blocking']);
+  });
+}();
+
 chrome.runtime.onMessage.addListener(function(req, sender, sendRes) {
   if (req.mes === 'add') {
     urls = [];
