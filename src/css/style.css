@@ -89,6 +89,11 @@ body {
   cursor: pointer;
 }
 
+.link {
+  color: white;
+  text-decoration: none;
+}
+
 footer {
   height: 1.5em;
   background-color: #333333;

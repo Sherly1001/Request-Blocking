@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Request Blocking</title>
-  <link rel="icon" href="images/icon128.png">
-  <link rel="stylesheet" href="css/all.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/icon128.png" />
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <div class="cua">
     <header>
@@ -16,36 +18,16 @@
     </header>
     <div class="block-urls">
       <header>Blocking urls</header>
-      <!-- <div>
-        <input type="text" value="https://daynhauhoc.com/u/" readonly>
-        <div class="bt tg"><i class="fas fa-toggle-on"></i></div>
-        <div class="bt rm"><i class="fas fa-trash-alt"></i></div>
-      </div>
-      <div>
-        <input type="text" value="https://daynhauhoc.com/u/" readonly>
-        <div class="bt tg"><i class="fas fa-toggle-off"></i></div>
-        <div class="bt rm"><i class="fas fa-trash-alt"></i></div>
-      </div>
-      <div>
-        <input type="text" value="https://daynhauhoc.com/u/" readonly>
-        <div class="bt tg"><i class="fas fa-toggle-on"></i></div>
-        <div class="bt rm"><i class="fas fa-trash-alt"></i></div>
-      </div>
-      <div>
-        <input type="text" value="https://daynhauhoc.com/u/" readonly>
-        <div class="bt tg"><i class="fas fa-toggle-off"></i></div>
-        <div class="bt rm"><i class="fas fa-trash-alt"></i></div>
-      </div>
-      <div>
-        <input type="text" value="https://daynhauhoc.com/u/" readonly>
-        <div class="bt tg"><i class="fas fa-toggle-on"></i></div>
-        <div class="bt rm"><i class="fas fa-trash-alt"></i></div>
-      </div> -->
     </div>
     <div class="add-url">
-      <header>Add new url</header>
+      <header>
+        Add new url with
+        <span><a class="link"
+            href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/declarativeNetRequest/RuleCondition"
+            target="_blank">urlFilter</a></span>
+      </header>
       <div>
-        <input type="text" placeholder="Ex. https://hentaiz.net/*">
+        <input type="text" placeholder="Ex. ||facebook.com" />
         <div class="bt add"><i class="fas fa-plus"></i></div>
       </div>
     </div>
@@ -57,4 +39,5 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popup.js"></script>
 </body>
+
 </html>

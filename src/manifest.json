@@ -1,13 +1,21 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Request Blocking",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Block requests from client to server",
-  "permissions": ["storage", "<all_urls>", "webRequest", "webRequestBlocking"],
+  "permissions": [
+    "storage",
+    "webRequest",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
-    "scripts": ["js/background.js"]
+    "service_worker": "js/background.js"
   },
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html",
     "default_icons": {
       "16": "images/icon16.png",
